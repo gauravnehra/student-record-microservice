@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="./stylesheets/index.css">
+    <title>Student Record</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-group">
+            <label for="rollno">Roll No:</label>
+            <input type="text" class="form-control" id="rollno" placeholder="enter roll no.">
+        </div>
+        <button class="btn btn-primary" id="search-student-btn">Search</button>
+        <br><br>
+
+        <div class="hidden" id="details">
+            <label for="student-details">Student Details:</label>
+            <table class="table" id="student-details">
+                <thead>
+                    <tr>
+                        <th scope="col">Roll #</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="student-details-row"></tr>
+                </tbody>
+            </table>
+
+            <label for="course-details">Course Details:</label>
+            <table class="table" id="course-details">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Duration (Months)</th>
+                        <th scope="col">Marks</th>
+                        <th scope="col">Teacher</th>
+                    </tr>
+                </thead>
+                <tbody id='course-details-body'>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./javascripts/index.js"></script>
+</body>
+
+</html>

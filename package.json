@@ -1,0 +1,19 @@
+{
+  "name": "student-record",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "student-start": "cd student-service && node app.js",
+    "course-start": "cd course-service && node app.js",
+    "teacher-start": "cd teacher-service && node app.js",
+    "start": "npm run student-start & npm run course-start & npm run teacher-start",
+    "student-install": "cd student-service && npm install",
+    "course-install": "cd course-service && npm install",
+    "teacher-install": "cd teacher-service && npm install",
+    "install": "npm run student-install & npm run course-install & npm run teacher-install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
