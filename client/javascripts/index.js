@@ -1,8 +1,8 @@
 const host = "localhost:3000";
 
 document
-  .getElementById("search-student-btn")
-  .addEventListener("click", getStudentDetails);
+  .getElementById("search-student-form")
+  .addEventListener("submit", getStudentDetails);
 
 function getStudentDetails() {
   let rollno = document.getElementById("rollno").value;
