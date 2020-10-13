@@ -1,5 +1,5 @@
 # student-record-microservice
-Microservice arch example created with nodejs.
+Microservice arch example created with nodejs. It is an example of sync type data management between services.
 
 User can search student record with rollno.
 
